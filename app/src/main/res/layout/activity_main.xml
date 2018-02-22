@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:orientation="vertical"
+        tools:context="com.edopore.edoforms.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/bien"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="74sp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/login" />
+
+            <EditText
+                android:id="@+id/eUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="74sp"
+                android:layout_height="wrap_content"
+                android:text="@string/pasword"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:password="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="74sp"
+                android:layout_height="wrap_content"
+                android:text="@string/cpasword"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/eCPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="74sp"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/eMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/gen"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/masculino" />
+
+            <RadioButton
+                android:id="@+id/rFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/femenino" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bFecha"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:background="@drawable/cal"
+                android:onClick="onButtonClicked"
+                android:textAllCaps="false"/>
+
+            <EditText
+                android:id="@+id/eFecha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="date"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="74sp"
+                android:layout_height="40sp"
+                android:text="@string/ciudad"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/sCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pasatiempo"
+                android:gravity="center"
+                android:layout_marginTop="5sp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/cLeer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lee"
+                    android:onClick="isChecked"/>
+                <CheckBox
+                    android:id="@+id/cVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jugar"
+                    android:onClick="isChecked"/>
+
+                <CheckBox
+                    android:id="@+id/cSports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deportes"
+                    android:onClick="isChecked"/>
+                <CheckBox
+                    android:id="@+id/cMusic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/musica"
+                    android:onClick="isChecked"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/bAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aceptar"
+            android:textColor="@color/black"
+            android:background="@color/whitesmoke"
+            android:onClick="onAceptarButton"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="74sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/login"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="74sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/pasword"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/tPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="74sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/email"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/tMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="74sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/gen"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/tGen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="74sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/fecha2"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/tFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="74sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/ciudad"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/tCiudad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/pasa"/>
+                <TextView
+                    android:id="@+id/tHobbies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tHobbies2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tHobbies3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tHobbies4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/bLimpiar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/limpia"
+                android:onClick="onLimpiarButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

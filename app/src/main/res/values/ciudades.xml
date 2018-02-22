@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Ciudades">
+        <item>Leticia</item>
+        <item>Medellín</item>
+        <item>Arauca</item>
+        <item>Barranquilla</item>
+        <item>Cartagena</item>
+        <item>Tunja</item>
+        <item>Manizales</item>
+        <item>Florencia</item>
+        <item>Yopal</item>
+        <item>Popayán</item>
+        <item>Valledupar</item>
+        <item>Quibdó</item>
+        <item>Montería</item>
+        <item>Bogotá</item>
+        <item>Puerto Inírida</item>
+        <item>San José del Guaviare</item>
+        <item>Neiva</item>
+        <item>Riohacha</item>
+        <item>Santa Marta</item>
+        <item>Villavicencio</item>
+        <item>Pasto</item>
+        <item>Cúcuta</item>
+        <item>Mocoa</item>
+        <item>Armenia</item>
+        <item>Pereira</item>
+        <item>San Andrés</item>
+        <item>Bucaramanga</item>
+        <item>Sincelejo</item>
+        <item>Ibagué</item>
+        <item>Cali</item>
+        <item>Mitú</item>
+        <item>Puerto Carreño</item>
+    </string-array>
+</resources>

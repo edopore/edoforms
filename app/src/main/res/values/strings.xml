@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">edoforms</string>
+    <string name="bien">¡Bienvenido!, Por Favor ingresa tus datos para registrarte</string>
+    <string name="login">Usuario</string>
+    <string name="pasword">Contraseña</string>
+    <string name="cpasword">Confirmar Contraseña</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="gen">Género</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="pick_date">Fecha de Nacimiento</string>
+    <string name="fecha">Seleccione Fecha</string>
+    <string name="ciudad">Ciudad de Nacimiento</string>
+    <string name="pasatiempo">Por favor seleccione sus pasatiempos favoritos</string>
+    <string name="lee">Leer</string>
+    <string name="jugar">Videojuegos</string>
+    <string name="deportes">Deportes</string>
+    <string name="programa">Programación</string>
+    <string name="musica">Música</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="pasa">Pasatiempo</string>
+    <string name="nopass">Las contraseñas no corresponden</string>
+    <string name="nouser">Por favor ingresa tu user</string>
+    <string name="nopass1">Por favor ingresa tu contraseña</string>
+    <string name="nomail">Por favor ingresa tu correo electrónico</string>
+    <string name="noho">Por favor selecciona tus intereses</string>
+    <string name="datosful">Los espacios estan llenos. Gracias!! :D</string>
+    <string name="nopass2">Por favor ingresa la confirmación de contraseña</string>
+    <string name="fecha2">Fecha de nacimiento</string>
+    <string name="limpia">Limpiar Formulario</string>
+
+</resources>
