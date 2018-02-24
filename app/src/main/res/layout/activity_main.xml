@@ -240,6 +240,7 @@
                     android:id="@+id/tUser"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"
                     android:layout_gravity="center"/>
             </LinearLayout>
@@ -257,6 +258,7 @@
                     android:id="@+id/tPass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"
                     android:layout_gravity="center"/>
             </LinearLayout>
@@ -273,6 +275,7 @@
                     android:id="@+id/tMail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"
                     android:layout_gravity="center"/>
             </LinearLayout>
@@ -290,6 +293,7 @@
                     android:id="@+id/tGen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"
                     android:layout_gravity="center"/>
             </LinearLayout>
@@ -307,6 +311,7 @@
                     android:id="@+id/tFecha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"
                     android:layout_gravity="center"/>
             </LinearLayout>
@@ -324,6 +329,7 @@
                     android:id="@+id/tCiudad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"
                     android:layout_gravity="center"/>
             </LinearLayout>
@@ -340,30 +346,37 @@
                     android:id="@+id/tHobbies"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"/>
                 <TextView
                     android:id="@+id/tHobbies2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"/>
                 <TextView
                     android:id="@+id/tHobbies3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"/>
                 <TextView
                     android:id="@+id/tHobbies4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
                     android:textColor="@color/black"/>
             </LinearLayout>
-            <Button
-                android:id="@+id/bLimpiar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/limpia"
-                android:onClick="onLimpiarButton"/>
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="@string/copy"
+            android:gravity="right"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"/>
     </LinearLayout>
 </ScrollView>
-
